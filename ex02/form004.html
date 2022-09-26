@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body, html {
+            background-color: black;
+        }
+
+        form {
+            background: darkgray;
+            padding: 10px;
+            margin: auto;
+            margin-top: 50px;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: -3px 3px 8px darkred;
+        }
+        
+        fieldset {
+            background: rgba(255, 0, 0, 0.487);
+            border: 2px solid black;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        legend {
+            font: bolder 1.1em 'Arial';
+            font-variant: small-caps;
+            color: white;
+            text-shadow: 1px 2px 2px rgba(139, 0, 0, 0.877);
+        }
+        
+        section.top-box {
+            padding: 5px;
+        }
+
+        section.bottom-box {
+            padding: 5px;
+        }
+
+        label {
+            display: block;
+            color: white;
+            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.644);
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <section class="top-box">
+                <label for="i-name">Name: </label>
+                <input type="text" name="name" id="i-name" minlength="3" maxlength="15" autocomplete="name" required>
+            </section>
+            <section class="top-box">
+                <label for="i-email">E-mail: </label>
+                <input type="email" name="email" id="i-email" placeholder="Type here your e-mail" autocomplete="email" required>
+            </section>
+            <section class="top-box">
+                <label for="i-tel">Cell phone: </label>
+                <input type="tel" name="tel" id="i-tel" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+            </section>
+        </fieldset>
+        <!-- Estudar mais sobre RegEx -->
+        <section class="bottom-box">
+            <input type="submit" value="submit">
+            <input type="reset" value="clean">
+        </section>
+    </form>
+</body>
+</html>
