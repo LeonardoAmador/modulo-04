@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        section {
+            margin: 10px;
+        }
+        
+       
+
+        label {
+            display: block;
+            padding-left: 5px;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        input#sub, input#reset {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <section>
+            <label for="i-name">Name: </label>
+            <input type="text" name="name" id="i-name" placeholder="Type your name" minlength="3" maxlength="15" autocomplete="username" required>
+        </section>
+        <section>
+            <label for="i-average">Average: </label>
+            <input type="number" name="average" id="i-average" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+        </section>
+        <section>
+            <label for="i-month">School period: </label>
+            <input type="month" name="month" id="i-month" value="2022-09">
+        </section>
+        <section>
+            <label for="i-day">Exam day: </label>
+            <input type="date" name="day" id="i-day">
+        </section>
+        <section>
+            <label for="i-time">Time: </label>
+            <input type="time" name="time" id="i-time">
+        </section>
+        <section>
+            <input type="submit" value="submit" id="sub">
+            <input type="reset" value="clean" id="reset">
+        </section>
+    </form>
+</body>
+</html>
