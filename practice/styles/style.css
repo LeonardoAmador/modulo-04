@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+    background-color: rgba(255, 68, 0, 0.695);
+}
+
+form {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 25vh;
+    transform: translate(-50%, 50%);
+}
+
+fieldset {
+    background-color: rgba(37, 37, 37, 0.325);
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -3px 2px 3px rgba(255, 119, 0, 0.435);
+    padding: 10px;
+    text-align: center;
+}
+
+legend {
+    font: bolder 1.1em 'Arial';
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 1px 1px 1px black; 
+}
+
+section.card-top {
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    font: bold 0.9em 'Arial';
+    color: white;
+    text-shadow: 1px 1px 1px black; 
+}
+
+select {
+    width: 40%;
+    height: 25px;
+
+    text-align: left;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+select:focus {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+optgroup {
+    color: white;
+    background-color: rgba(40, 66, 66, 0.802);
+}
+
+option {
+    color: rgba(255, 132, 0, 0.953);
+    font: bold 1em 'Arial';
+    text-shadow: 2px 2px 3px black; 
+}
+
+section.card-middle {
+    padding-bottom: 10px;
+}
+
+input#i-cap {
+    width: 40%;
+    height: 25px;
+
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input#i-cap:focus {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+section.card-bottom > input {
+    width: 20%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.818);
+    color: white;
+    font: bold 0.9em 'Arial';
+    font-variant: small-caps;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(255, 119, 0, 0.435);
+}
+
+section.card-bottom > input:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to left, rgba(255, 132, 0, 0.953), rgba(165, 42, 42, 0.629));
+    box-shadow: 1px 1px 1px rgba(36, 36, 36, 0.557);
+    transform: translateY(-1.1px);
+    transition: .3s;
+}
+
+section.card-bottom > input:active {
+    opacity: 65%;
+}

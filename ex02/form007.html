@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <section>
+            <label for="i-est">Estado</label>
+            <select name="estado" id="i-est">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Regiäo Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">Säo Paulo</option>
+                </optgroup>
+
+                <optgroup label="Regiäo Nordeste">
+                    <option value="MA">Maranhäo</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <label for="i-prof">Profissäo: </label>
+            <input type="text" name="prof" id="i-prof" list="lst-prof">
+            <datalist id="lst-prof">
+                <option>Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </section>
+
+        <section>
+            <label for="i-msg">Mensagem: </label> <br>
+            <textarea name="msg" id="i-msg" cols="30" rows="10"></textarea>
+        </section>
+        
+        <section>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </section>
+    </form>
+</body>
+</html>

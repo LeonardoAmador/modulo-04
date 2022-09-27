@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select and Datalist</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="auto">
+        <fieldset>
+            <legend>Dados Cadastrais</legend>
+            <section class="card-top">
+                <label for="i-est">Estado: </label>
+                <select name="est" id="i-est" required>
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Região Sudeste" class="region">
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PI">Piauí</option>
+                        <option value="CE">Ceará</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="BA">Bahia</option>
+                    </optgroup>
+                </select>
+            </section>
+            <section class="card-middle">
+                <label for="i-cap">Capital: </label>
+                <input type="text" name="cap" id="i-cap" list="capital" placeholder="--- Click here ---" required>
+                <datalist id="capital">
+                    <option value="AC">Rio Branco</option>
+                    <option value="AL">Maceió</option>
+                    <option value="AP">Macapá</option>
+                    <option value="AM">Manaus</option>
+                    <option value="BH">Salvador</option>
+                    <option value="CE">Fortaleza</option>
+                    <option value="ES">Vitória</option>
+                    <option value="GO">Goiänia</option>
+                    <option value="SP">Säo Paulo</option>
+                </datalist>
+            </section>
+            <section class="card-bottom">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </section>
+        </fieldset>
+    </form>
+</body>
+</html>
