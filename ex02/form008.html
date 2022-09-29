@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <section>
+            <label for="in1">NUmber 1:</label>
+            <input type="number" name="n1" i="in1" min="0" max="100" required oninput="iplus.innerHTML = Number(in1.value) + Number(in2.value)">
+        </section>
+        <section>
+            <label for="in2">Number 2</label>
+            <input type="number" name="n1" id="in2" min="0" max="100" required oninput="iplus.innerHTML = Number(in1.value) + Number(in2.value)">
+        </section>
+        <section>
+            <label for="iplus">Plus: </label>
+            <output name="plus" id="iplus">0</output>
+        </section>
+        <section>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </section>
+    </form>
+</body>
+</html>
